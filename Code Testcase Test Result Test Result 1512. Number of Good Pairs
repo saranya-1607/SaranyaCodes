@@ -1,0 +1,19 @@
+class Solution {
+    public int numIdenticalPairs(int[] nums) {
+      int count=0;
+     
+        HashMap<Integer,Integer> hey=new HashMap<>();
+         for(int i=0;i<nums.length;i++){
+           if(hey.containsKey(nums[i])){
+            int val=hey.get(nums[i]);
+            hey.put(nums[i],val+1);
+            count=count+val;
+
+           }else{
+            hey.put(nums[i],1);
+           }
+
+      }
+      return count;
+    }
+}
