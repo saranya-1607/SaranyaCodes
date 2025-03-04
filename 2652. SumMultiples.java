@@ -1,4 +1,4 @@
-class Solution {
+class SumMultiples {
     public int sumOfMultiples(int n) {
        int ans =0;
        for(int i=3;i<=n;i++){
