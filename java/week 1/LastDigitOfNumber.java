@@ -1,4 +1,4 @@
-class Main{
+class LastDigitOfNumber{
   public static void main(String[] args){
     int n=1234554;
     while(n>0){
